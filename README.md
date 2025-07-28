@@ -1,38 +1,39 @@
-# sv
+# 🧠 Devlogue — A Journaling RPG
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**Devlogue** is a journaling RPG web app that gamifies self-reflection and knowledge exploration. As you write about your day, debug your thoughts, or explore ideas, a game world grows around you — with quests, NPCs (not implemented), a world map(not implemented), and your own evolving avatar(not implemented).
 
-## Creating a project
+> ✨ Built for journaling enthusiasts, and RPG lovers — Devlogue turns your thoughts into adventures.
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```sh
-# create a new project in the current directory
-npx sv create
+## 🧩 Key Features
 
-# create a new project in my-app
-npx sv create my-app
-```
+- 📝 **Rich Text Journaling** using Quill.js with autosave.
+- 🤖 **AI-powered Journal Companion** (Gemini AI) to generate:
+  - Reflective prompts
+  - Summary of past entries
+  - Quests derived from writing patterns
+- 🧍‍♂️ **Animated Rive Avatar** that reacts to entries (not implemented) and clicks.
 
-## Developing
+---
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 🚀 Installation Guide
 
-```sh
+You’ll need:
+
+- Node.js v18+
+- Git (optional but helpful)
+- A modern browser (Chrome, Firefox, Edge)
+
+### 🖥️ For all platforms (Linux, macOS, Windows):
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/devlogue.git
+cd devlogue
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
