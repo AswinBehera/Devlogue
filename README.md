@@ -119,3 +119,6 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser.
 ## License
 
 Apache 2.0
+
+## Credits
+Rive Avatar animation by [mtdsgnco](https://rive.app/@mtdsgnco/)
