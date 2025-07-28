@@ -4,6 +4,8 @@
 
 > ✨ Built for journaling enthusiasts, and RPG lovers — Devlogue turns your thoughts into adventures.
 
+![Animated demo of the Devlogue web app showing a user journaling in a rich text editor, with a sidebar displaying AI-generated prompts and quests. The interface features a clean, modern design with playful RPG-inspired elements. The overall tone is inviting and encourages exploration and self-reflection.](https://github.com/AswinBehera/Devlogue/blob/main/static/devlogue.gif)
+
 ---
 
 ## 🧩 Key Features
