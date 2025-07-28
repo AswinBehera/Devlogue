@@ -116,4 +116,4 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## License
 
-MIT
+Apache 2.0
