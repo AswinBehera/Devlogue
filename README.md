@@ -27,13 +27,93 @@ You’ll need:
 
 ### 🖥️ For all platforms (Linux, macOS, Windows):
 
-```bash
-# 1. Clone the repo
+# Devlogue
+
+A journaling app with AI-powered reflection quests and themes.
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```sh
 git clone https://github.com/yourusername/devlogue.git
 cd devlogue
+```
 
-# 2. Install dependencies
+### 2. Install Dependencies
+
+```sh
 npm install
+```
 
-# 3. Start the development server
+### 3. Set Up Ollama for AI Integration
+
+This app uses [Ollama](https://ollama.com/) to run local LLMs for journal analysis.
+
+#### a. Install Ollama
+
+Follow the instructions at [ollama.com/download](https://ollama.com/download) to install Ollama for your platform.
+
+#### b. Pull a Model
+
+You can use `deepseek-r1` (recommended) or any other supported model.  
+To pull `deepseek-r1`, run:
+
+```sh
+ollama pull deepseek-r1
+```
+
+Or, for another model (e.g., `llama3`):
+
+```sh
+ollama pull llama3
+```
+
+#### c. Start Ollama
+
+Ollama usually runs automatically after installation. If not, start it with:
+
+```sh
+ollama serve
+```
+
+#### d. Configure the Model in Code
+
+By default, the app uses `deepseek-r1`.  
+If you want to use a different model, open  
+`src/routes/+page.svelte`  
+and find this section in the `analyzeEntry` function:
+
+```js
+body: JSON.stringify({
+    model: "deepseek-r1", // or another model you have pulled
+    prompt,
+    stream: false,
+}),
+```
+
+Change `"deepseek-r1"` to your preferred model name (e.g., `"llama3"`).
+
+---
+
+### 4. Run the App
+
+```sh
 npm run dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## Notes
+
+- Make sure Ollama is running and the model you specify is pulled.
+- The AI features will not work if Ollama is not running or the model is not available.
+- For best results, use a model that supports instruction-following and JSON output.
+
+---
+
+## License
+
+MIT
